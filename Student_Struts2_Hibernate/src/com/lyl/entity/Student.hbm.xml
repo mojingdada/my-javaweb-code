@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.lyl.entity.Student" table="Student">
+        <id name="Student_id" column="id">
+            <generator class="native"/>
+        </id>
+		<property name="Student_name" column="stu_name" type="string"></property>
+      <property name="Student_password" column="stu_password" type="string"></property>
+   	
+    </class>
+</hibernate-mapping>
